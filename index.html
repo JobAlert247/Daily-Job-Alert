@@ -8,72 +8,92 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f2f2;
+      background: #f0f2f5;
     }
     header {
-      background-color: #003366;
+      background-color: #0066cc;
       color: white;
-      padding: 1rem;
+      padding: 20px;
       text-align: center;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      background: #0055a5;
+      background: #003366;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
       color: white;
+      margin: 10px;
       text-decoration: none;
-      padding: 1rem;
-    }
-    nav a:hover {
-      background-color: #003366;
+      font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 20px;
+    }
+    .job-list {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .job-list h3 {
+      margin: 0;
+      color: #0066cc;
+    }
+    .job-list p {
+      margin: 5px 0;
     }
     footer {
-      background-color: #003366;
+      background: #003366;
       color: white;
       text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to Daily Job Alert</h1>
-    <p>Get latest updates on government and private jobs</p>
+    <h1>Daily Job Alert</h1>
+    <p>Latest updates on government and private jobs</p>
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <section id="home">
-    <h2>Home</h2>
-    <p>This site provides daily updates on all major job openings. Stay connected for alerts!</p>
-  </section>
+  <section>
+    <h2>🔔 Latest Job Alerts</h2>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>We are a free platform sharing job alerts for government, banking, private, and PSU jobs. No login or signup needed.</p>
-  </section>
+    <div class="job-list">
+      <h3>SBI Clerk Recruitment</h3>
+      <p>🗓️ Last Date: 31 July 2025</p>
+      <p>📍 Location: Pan India</p>
+      <p><a href="#">👉 Apply Now</a></p>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: rohitgawande9999@gmail.com</p>
-    <p>Phone: 8446357751</p>
+    <div class="job-list">
+      <h3>TCS BPO Hiring (Walk-in)</h3>
+      <p>🗓️ Walk-in Date: 26–30 July</p>
+      <p>📍 Location: Mumbai</p>
+      <p><a href="#">👉 View Details</a></p>
+    </div>
+
+    <div class="job-list">
+      <h3>ESIC UDC Recruitment</h3>
+      <p>🗓️ Apply Before: 5 August 2025</p>
+      <p>📍 Location: All India</p>
+      <p><a href="#">👉 Apply Online</a></p>
+    </div>
+
   </section>
 
   <footer>
-    &copy; 2025 Daily Job Alert. All rights reserved.
+    &copy; 2025 JobAlert247 | Designed by Rohit Gawande
   </footer>
+
 </body>
 </html>

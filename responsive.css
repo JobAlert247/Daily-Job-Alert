@@ -1,0 +1,46 @@
+/* Responsive Design CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container, .card, .section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .apply-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}

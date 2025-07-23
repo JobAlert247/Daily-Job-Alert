@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Job Alert</title>
+</head>
+<body>
+  <h1>Welcome to Daily Job Alert</h1>
+  <p>Here you’ll get daily updates on government and private jobs.</p>
+</body>
+</html>

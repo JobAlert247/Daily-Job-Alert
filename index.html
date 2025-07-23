@@ -1,34 +1,74 @@
-<style>
-  body {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    position: relative;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Job Alert</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #3a2e2e;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    header, section, footer {
+      max-width: 800px;
+      margin: auto;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Welcome to Daily Job Alert</h1>
+      <p>Get daily updates on latest Government & Private Jobs.</p>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#govt">Government Jobs</a>
+        <a href="#private">Private Jobs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  /* Add a semi-transparent overlay for readability */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: -1;
-  }
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is your one-stop destination for job updates.</p>
+    </section>
 
-  .container {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 800px;
-    backdrop-filter: blur(6px);
-    color: #fff;
-  }
+    <section id="govt">
+      <h2>Government Jobs</h2>
+      <p>Latest Sarkari job alerts here.</p>
+    </section>
 
-  nav a {
-    color: #ffd700; /* golden text for navbar */
-  }
-</style>
+    <section id="private">
+      <h2>Private Jobs</h2>
+      <p>Explore latest private sector opportunities.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Name: Rohit Suresh Gawande<br>
+         Mobile: 8446357751<br>
+         Email: rohitgawande9999@gmail.com</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Daily Job Alert</p>
+    </footer>
+  </div>
+</body>
+</html>

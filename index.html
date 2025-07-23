@@ -5,70 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daily Job Alert</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      background-color: #3a2e2e;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3efe3;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #5e4632;
       color: white;
+      padding: 20px;
+      text-align: center;
     }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 2rem;
-      min-height: 100vh;
+    nav {
+      background-color: #8c6e54;
+      text-align: center;
+      padding: 10px 0;
     }
-    header, section, footer {
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
       max-width: 800px;
       margin: auto;
     }
-    nav a {
-      margin: 0 10px;
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
+    footer {
+      background-color: #5e4632;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+    h2 {
+      color: #5e4632;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Welcome to Daily Job Alert</h1>
-      <p>Get daily updates on latest Government & Private Jobs.</p>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#govt">Government Jobs</a>
-        <a href="#private">Private Jobs</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Welcome to Daily Job Alert</h1>
+    <p>Your daily dose of Government & Private Job Updates</p>
+  </header>
 
-    <section id="home">
-      <h2>Home</h2>
-      <p>This is your one-stop destination for job updates.</p>
-    </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#govt">Government Jobs</a>
+    <a href="#private">Private Jobs</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="govt">
-      <h2>Government Jobs</h2>
-      <p>Latest Sarkari job alerts here.</p>
-    </section>
+  <section id="home">
+    <h2>Home</h2>
+    <p>We provide daily updates about latest openings in government and private sectors. Stay tuned and never miss an opportunity.</p>
+  </section>
 
-    <section id="private">
-      <h2>Private Jobs</h2>
-      <p>Explore latest private sector opportunities.</p>
-    </section>
+  <section id="govt">
+    <h2>Government Jobs</h2>
+    <p>Explore Sarkari Naukri updates across India, including banking, railways, SSC, and more.</p>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Name: Rohit Suresh Gawande<br>
-         Mobile: 8446357751<br>
-         Email: rohitgawande9999@gmail.com</p>
-    </section>
+  <section id="private">
+    <h2>Private Jobs</h2>
+    <p>Get the latest alerts for private companies hiring across various sectors like finance, sales, BPO, and more.</p>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Daily Job Alert</p>
-    </footer>
-  </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Name: Rohit Suresh Gawande<br>
+      Mobile: 8446357751<br>
+      Email: rohitgawande9999@gmail.com
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Daily Job Alert. All rights reserved.</p>
+  </footer>
 </body>
 </html>

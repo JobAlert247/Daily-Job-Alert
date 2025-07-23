@@ -1,47 +1,105 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Job Alert 24/7</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8VP0JZFCJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobAlert247 - Government & Private Jobs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #fff8f0;
+      color: #2b1b17;
     }
-    gtag('js', new Date());
-    gtag('config', 'G-Q8VP0JZFCJ');
-  </script>
-</head><body>
+    header {
+      background-color: #8b0000;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #b8860b;
+    }
+    nav a {
+      padding: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #a0522d;
+    }
+    .hero {
+      background-image: url('https://www.workitdaily.com/media-library/job-search.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .job-card {
+      border: 1px solid #ccc;
+      border-left: 6px solid #8b0000;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+    }
+    .job-card h2 {
+      margin-top: 0;
+      color: #8b0000;
+    }
+    .job-card a.button {
+      background-color: #8b0000;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #b8860b;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
   <header>
-    <h1>Job Alert 24/7</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#notifications">Latest Jobs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>  <section id="home">
-    <h2>Welcome to Daily Job Alerts</h2>
-    <p>Get the latest updates on government and private sector job openings, all in one place.</p>
-  </section>  <section id="notifications">
-    <h2>Konkan Railway Vacancy</h2>
-    <h3>Junior Technical Assistant (Signal & Telecommunication)</h3>
-    <ul>
-      <li>Total Posts: 4</li>
-      <li>UR: 3 | OBC: 0 | SC: 1 | ST: 0 | EWS: 0</li>
-    </ul>
-    <h3>Technician (Signal & Telecommunication)</h3>
-    <p>Check official website for detailed eligibility & criteria.</p>
-    <a class="apply-button" href="https://konkanrailway.com" target="_blank">Apply Now</a>
-  </section>  <section id="contact">
-    <h2>Contact</h2>
-    <p>Name: Rohit Suresh Gawande</p>
-    <p>Email: rohitgawande9999@gmail.com</p>
-    <p>Phone: 8446357751</p>
-  </section>  <footer>
-    <p>&copy; 2025 Job Alert 24/7. All rights reserved.</p>
-  </footer>
-</body></html>
+    <h1>JobAlert247</h1>
+    <p>Latest Government and Private Job Notifications</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#govt">Govt Jobs</a>
+    <a href="#private">Private Jobs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h1>Find Your Dream Job Today</h1>
+    <p>Stay updated with the latest job openings</p>
+  </div>
+  <div class="content">
+    <div class="job-card">
+      <h2>Konkan Railway JTA / Technician Posts</h2>
+      <p>Vacancies for JTA Signal/Telecommunication & Technician Signal/Telecommunication announced by Konkan Railway.</p>
+      <a href="https://konkanrailway.com/uploads/vacancy/1719218590Notification%20No.%20CO%20AP%20RR%20%2821%29%202024.pdf" class="button" target="_blank">Download Notification</a>
+      <a href="https://konkanrailway.com/" class="button" target="_blank">Apply Now</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 JobAlert247 | Designed with ❤️ for job seekers</p>
+  </div>
+</body>
+</html>

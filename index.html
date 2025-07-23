@@ -1,90 +1,133 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Job Alert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f6f2ed;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f9f6f2;
       color: #333;
-    }
-    header {
-      background-color: #7e4a35;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background-color: #a37555;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 12px;
-    }
-    .job-box {
-      background-color: #fff8f0;
-      border: 2px solid #e0cfc2;
-      border-left: 6px solid #7e4a35;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    .job-box h2 {
-      margin-top: 0;
-    }
-    .apply-btn {
-      display: inline-block;
-      background-color: #7e4a35;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #7e4a35;
-      color: white;
-    }
+    }header {
+  background-color: #4f2c1d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #e9ded4;
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4f2c1d;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 50px 20px;
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #f8b400;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.jobs-section {
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.jobs-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4f2c1d;
+}
+
+.job-card {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.job-card h3 {
+  margin-top: 0;
+  color: #2e1a13;
+}
+
+.job-card a {
+  color: #f88c00;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #4f2c1d;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
     <h1>Daily Job Alert</h1>
     <p>Free website for latest government and private job alerts</p>
   </header>  <nav>
     <a href="#home">Home</a>
-    <a href="#jobs">Latest Jobs</a>
+    <a href="#latest">Latest Jobs</a>
     <a href="#contact">Contact</a>
-  </nav>  <div class="container">
-    <div class="job-box" id="konkan">
-      <h2>Konkan Railway Vacancy</h2>
-      <p><strong>Posts:</strong></p>
-      <ul>
-        <li><strong>JTA Signal / Telecommunication</strong>: 3 (UR), 0 (SC), 1 (ST), 0 (OBC), 0 (EWS) – Total: 4</li>
-        <li><strong>Technician Signal / Telecommunication</strong></li>
-      </ul>
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
-  </div>  <footer id="contact">
-    <p>Contact: Rohit Gawande | Email: rohitgawande9999@gmail.com | Mobile: 8446357751</p>
-    <p>© 2025 JobAlert247. All rights reserved.</p>
+  </nav>  <section class="hero" id="home">
+    <h1>Find the Right Job for You</h1>
+    <p>Get daily updates on the latest job vacancies</p>
+    <a href="#latest">View Openings</a>
+  </section>  <section class="jobs-section" id="latest">
+    <h2>Latest Job Notifications</h2><div class="job-card">
+  <h3>Konkan Railway – JTA Signal / Telecommunication</h3>
+  <p>Vacancies: 4</p>
+  <p>Last Date to Apply: 5 August 2025</p>
+  <a href="#">Apply Now</a>
+</div>
+
+<div class="job-card">
+  <h3>Konkan Railway – Technician Signal / Telecommunication</h3>
+  <p>Vacancies: 2</p>
+  <p>Last Date to Apply: 5 August 2025</p>
+  <a href="#">Apply Now</a>
+</div>
+
+<!-- Add more job cards here later -->
+
+  </section>  <footer id="contact">
+    Created by Rohit Suresh Gawande | Contact: rohitgawande9999@gmail.com | 8446357751
   </footer>
-</body>
-</html>
+</body></html>

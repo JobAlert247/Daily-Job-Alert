@@ -1,112 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daily Job Alert</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f6f1;
-    }
-    header {
-      background-color: #4b2e2e;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #7a5230;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem;
-      display: none;
-    }
-    #home {
-      display: block;
-    }
-    .job-card {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      margin: 1rem 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    }
-    footer {
-      background-color: #4b2e2e;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Daily Job Alert</h1>
-    <p>Get daily updates on government and private jobs.</p>
-  </header>
-
-  <nav>
-    <a href="#" onclick="showSection('home')">Home</a>
-    <a href="#" onclick="showSection('about')">About</a>
-    <a href="#" onclick="showSection('contact')">Contact</a>
-  </nav>
-
-  <section id="home">
-    <h2>Latest Job Alerts</h2>
-    <div class="job-card">
-      <h3>IBPS Clerk Recruitment 2025</h3>
-      <p>Apply by: 30 July 2025</p>
-    </div>
-    <div class="job-card">
-      <h3>South Indian Bank BPO Interview</h3>
-      <p>Walk-in: 24 July 2025</p>
-    </div>
-    <div class="job-card">
-      <h3>SHCIL Officer Trainee Result</h3>
-      <p>Expected: August 2025</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>This website provides daily job updates for freshers and experienced candidates in the government and private sectors.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Name:</strong> Rohit Suresh Gawande</p>
-    <p><strong>Phone:</strong> 8446357751</p>
-    <p><strong>Email:</strong> rohitgawande9999@gmail.com</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Daily Job Alert
-  </footer>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => {
-        sec.style.display = 'none';
-      });
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
-</body>
-</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.85); /* translucent white box */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+  }
+</style>

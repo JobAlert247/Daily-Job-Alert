@@ -1,108 +1,253 @@
-<!DOCTYPE html><html lang="en">
-<head><link rel="stylesheet" href="responsive.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JobAlert247 - Government & Private Jobs</title>
-  <style><h2 class="jobs-ribbon">Konkan Railway Jobs</h2>
-    body {
-      margin: 0;
-      font-family: 'Times New Roman', serif;
-      background-color: #fff8f0;
-      color: #2b1b17;
-    }
-    header {
-      background-color: #8b0000;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #b8860b;
-    }
-    nav a {
-      padding: 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background-color: #a0522d;
-    }
-    .hero {
-      background-image: url('https://www.workitdaily.com/media-library/job-search.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 4rem 2rem;
-      color: white;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .job-card {
-      border: 1px solid #ccc;
-      border-left: 6px solid #8b0000;
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      background-color: #fff;
-    }
-    .job-card h2 {
-      margin-top: 0;
-      color: #8b0000;
-    }
-    .job-card a.button {
-      background-color: #8b0000;
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    .footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #b8860b;
-      color: white;
-      margin-top: 2rem;
-    }
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthHub - Medical Jobs & Opportunities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #2c7873;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            background-color: #6fb98f;
+            padding: 15px 0;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #004445;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        
+        .section-title {
+            color: #004445;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+        }
+        
+        .job-listing {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-listing:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .job-listing h3 {
+            color: #2c7873;
+            margin-bottom: 10px;
+        }
+        
+        .job-listing .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .state-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .state-btn {
+            background-color: #6fb98f;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .state-btn:hover, .state-btn.active {
+            background-color: #004445;
+        }
+        
+        footer {
+            background-color: #004445;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-menu a {
+                margin: 5px 0;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-  <img src="https://i.imgur.com/ZY1YgUZ.png" alt="Job Alert Banner" style="width: 100%; height: auto; border-radius: 12px;">
-<img src="https://cdn.pixabay.com/photo/2017/10/10/21/46/jobs-2838927_1280.jpg" 
-     alt="Job Updates Graphic" 
-     style="width: 100%; height: auto; border-radius: 12px; margin: 20px 0;">
-    <h1>Daily Job Alert</h1>
-</header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#govt">Govt Jobs</a>
-    <a href="#private">Private Jobs</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="hero">
-    <h1>Find Your Dream Job Today</h1>
-    <p>Stay updated with the latest job openings</p>
-  </div>
-  <div class="content">
-    <div class="job-card">
-      <h2>Konkan Railway JTA / Technician Posts</h2>
-      <p>Vacancies for JTA Signal/Telecommunication & Technician Signal/Telecommunication announced by Konkan Railway.</p>
-      <a href="https://konkanrailway.com/uploads/vacancy/1719218590Notification%20No.%20CO%20AP%20RR%20%2821%29%202024.pdf" class="button" target="_blank">Download Notification</a>
-      <a href="https://konkanrailway.com/" class="button" target="_blank">Apply Now</a>
+    <header>
+        <div class="container">
+            <h1>HealthHub.in</h1>
+            <p>Your gateway to medical careers and opportunities</p>
+        </div>
+    </header>
+    
+    <nav class="nav-menu">
+        <div class="container">
+            <a href="#">Medical Jobs</a>
+            <a href="#">Nursing</a>
+            <a href="#">Hospital Admin</a>
+            <a href="#">Pharmacy</a>
+            <a href="#">Research</a>
+            <a href="#">Central Health Jobs</a>
+            <a href="#">State Health Jobs</a>
+            <a href="#">Other Medical Jobs</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section>
+            <h2 class="section-title">Popular Medical Jobs</h2>
+            
+            <div class="job-listing">
+                <h3>AIIMS Nursing Officer Recruitment 2025 for 1500+ Vacancies – Last Date Extended</h3>
+                <p>Applications invited for Nursing Officer positions across AIIMS branches. 10+2 with GNM/B.Sc Nursing required.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>NHM Community Health Officer Recruitment 2025: 5208 Vacancies for Medical Graduates</h3>
+                <p>Work in rural health centers with attractive salary packages. MBBS/BDS/BAMS/BHMS required.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>ICMR Scientist B Recruitment 2025: Apply Online for 230 Research Positions</h3>
+                <p>Opportunity to work in India's premier medical research organization. Post-graduation in relevant field required.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>Hospital Staff Nurse Recruitment 2025: 10th/12th Pass Candidates Eligible for 4897 Vacancies</h3>
+                <p>Salary ₹21,700 to ₹69,000 P.M. | GNM/B.Sc Nursing required | Apply across multiple government hospitals.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <hr>
+            
+            <h2 class="section-title">Central Government Health Jobs</h2>
+            
+            <div class="job-listing">
+                <h3>ESIC Senior Resident Recruitment 2025: Golden Opportunity for MD/MS Doctors, Apply Now for 58 Posts!</h3>
+                <p>Work in ESIC hospitals across India with excellent benefits and career growth.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>CGHS Specialist Doctor Recruitment 2025 for 108 Positions – Last Date Extended</h3>
+                <p>Specialists in Medicine, Surgery, Gynecology, Pediatrics, Radiology, and Anesthesia needed.</p>
+                <p class="date">July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>DRDO Medical Scientist Recruitment 2025: A Premier Career in Defence Medical Research!</h3>
+                <p>Opportunities for MBBS, BDS, and Life Science postgraduates in cutting-edge medical research.</p>
+                <p class="date">July 22, 2025</p>
+            </div>
+            
+            <hr>
+            
+            <h2 class="section-title">State Government Health Jobs</h2>
+            
+            <div class="state-selector">
+                <button class="state-btn active">All States</button>
+                <button class="state-btn">Maharashtra</button>
+                <button class="state-btn">Delhi</button>
+                <button class="state-btn">Tamil Nadu</button>
+                <button class="state-btn">Uttar Pradesh</button>
+                <button class="state-btn">West Bengal</button>
+                <button class="state-btn">Kerala</button>
+                <button class="state-btn">Karnataka</button>
+            </div>
+            
+            <div class="job-listing">
+                <h3>TN Medical Services Recruitment 2025: Apply Online for 100 Medical Officer Posts!</h3>
+                <p>July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>UP NHM ANM Recruitment 2025: Golden Opportunity for 1479 Auxiliary Nurse Midwife Positions</h3>
+                <p>July 23, 2025</p>
+            </div>
+            
+            <div class="job-listing">
+                <h3>Bihar Health Services Pharmacist Recruitment 2025 for 4361 Vacancies</h3>
+                <p>D.Pharm/B.Pharm required | Apply through online portal before deadline.</p>
+                <p class="date">July 21, 2025</p>
+            </div>
+        </section>
     </div>
-  </div>
-  <div class="footer">
-    <p>&copy; 2025 JobAlert247 | Designed with ❤️ for job seekers</p>
-  </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HealthHub.in - All Rights Reserved</p>
+            <p>Contact: info@healthhub.in | Help Line: 1800-123-4567</p>
+        </div>
+    </footer>
 </body>
 </html>
